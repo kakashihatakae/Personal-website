@@ -2,7 +2,7 @@ import { getContentList } from "@src/utils/markdown";
 import ProjectCard from "@src/components/ProjectCard";
 
 export const metadata = {
-  title: "Projects | Your Name",
+  title: "Projects | Shreyas Bhujbal",
   description: "Showcase of my personal and professional projects",
 };
 

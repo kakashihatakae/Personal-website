@@ -2,7 +2,7 @@ import { getContentList } from "@src/utils/markdown";
 import BlogCard from "@src/components/BlogCard";
 
 export const metadata = {
-  title: "Blog | Your Name",
+  title: "Blog | Shreyas Bhujbal",
   description: "Articles about web development, technology, and more",
 };
 

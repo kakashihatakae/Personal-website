@@ -9,8 +9,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name - Personal Website",
-  description: "Personal website and blog",
+  title: "Shreyas Bhujbal",
+  description: "Shreyas Bhujbal's personal website and blog",
 };
 
 export default function RootLayout({
