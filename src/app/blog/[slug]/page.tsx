@@ -2,12 +2,14 @@ import { getContentList } from "@src/utils/markdown";
 import type { Metadata } from "next";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blogs = await getContentList("blogs");
-  const blog = blogs.find((b) => b.slug === params.slug);
+  const slug = (await params).slug;
+  const blog = blogs.find((b) => b.slug === slug);
 
   return {
     title: `${blog?.frontmatter.title} | Blog`,
@@ -17,7 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPost({ params }: Props) {
   const blogs = await getContentList("blogs");
-  const blog = blogs.find((b) => b.slug === params.slug);
+  const slug = (await params).slug;
+  const blog = blogs.find((b) => b.slug === slug);
 
   if (!blog) return <div>Blog not found</div>;
 

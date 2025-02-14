@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const projects = await getContentList("projects");
-  const project = projects.find((p) => p.slug === params.slug);
+  const slug = (await params).slug;
+  const project = projects.find((p) => p.slug === slug);
 
   return {
     title: `${project?.frontmatter.title} | Projects`,
@@ -19,7 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProjectPost({ params }: Props) {
   const projects = await getContentList("projects");
-  const project = projects.find((p) => p.slug === params.slug);
+  const slug = (await params).slug;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) return <div>Project not found</div>;
 
