@@ -16,7 +16,8 @@ export default function Home() {
           <div>
             <h1 className="text-4xl font-bold">Shreyas Bhujbal</h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mt-2">
-              Brief introduction about yourself
+              Dreamer, Adventurer, and Creator. Desire to be more than just a
+              number !
             </p>
             <SocialIcons className="mt-4" />
           </div>
