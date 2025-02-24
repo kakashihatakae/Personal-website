@@ -8,7 +8,7 @@ Reddit can be a very useful tool for a solo entreprenuer to gain early adopters 
 As a novice solopreneur I wanted to leverage the power of reddit to gain users and start earning some MRR. 
 
 I created my first post and posted it on reddit, low and behold it was **Rejected !**. 
-After some research I came to know that a lot of subreddits have a karma requirement for posts to not be rejected. I decided to buy a reddit account with high karma since I didn't know how I can boost my karma in a small of time. And I'm going to write down in this post about how you can do the same.
+After some research I came to know that a lot of subreddits have a karma requirement for posts to not be rejected. I decided to buy a reddit account with high karma since I didn't know how I can boost my karma in a small amount of time. I'm going to write down in this post about how you can do the same.
 
 ## The Portal
 I used [redaccs.com](https://redaccs.com/) to buy an account. The portal is not high tech but it does the job. 
