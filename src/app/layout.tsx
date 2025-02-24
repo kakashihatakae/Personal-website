@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Navbar from "@src/components/Navbar";
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${geist.variable} antialiased min-h-screen`}>
         <Navbar />
         <div className="pt-4">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
